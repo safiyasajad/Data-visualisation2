@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crime Trends across Malaysia</title>
+
+  <!-- Load Vega, Vega-Lite, and Vega-Embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Crime Trends across Malaysia</h1>
+
+  <!-- Map visualization -->
+  <section>
+    <h2>Crime Distribution by State</h2>
+    <div id="map_idiom"></div>
+  </section>
+
+  <!-- Stacked Bar Chart -->
+  <section>
+    <h2>Types of Crime from 2000 to 2021</h2>
+    <div id="stacked_bar_chart"></div>
+  </section>
+
+   <!-- Donut Chart -->
+  <section>
+    <h2>Types of Crime by Year</h2>
+    <div id="crime_donut_chart"></div>
+  </section>
+
+  <!-- Load JS -->
+  <script src="vega_lite_vis.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 420,
+  "data": {
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-Visualisation-2/main/crime_by_year_type.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == year"  
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "Crimes", "as": "TotalCrimes"}
+      ],
+      "groupby": ["Type"]  
+    }
+  ],
+  "params": [
+    {
+      "name": "year",  
+      "value": 2022,  
+      "bind": {
+        "input": "select",
+        "options": [2016, 2017, 2018, 2019, 2020, 2021, 2022],  
+        "labels": ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+        "name": "Select Year: "  
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 10, "stroke": "#fff"}
+    },
+    {
+      "mark": {"type": "text", "radiusOffset": 10}
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "TotalCrimes", "type": "quantitative", "stack": true},
+    "radius": {
+      "field": "TotalCrimes",
+      "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      
+      "legend": {
+        "title": "Types of Crimes",
+        "labelFontSize": 10,  
+        "titleFontSize": 25    
+      }
+    },
+    "tooltip": [  
+      {"field": "Type", "type": "nominal", "title": "Crime Type"},
+      {"field": "TotalCrimes", "type": "quantitative", "title": "Number of Crimes"}
+    ]
+  }
+}
