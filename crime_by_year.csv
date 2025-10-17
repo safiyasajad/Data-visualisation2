@@ -1,0 +1,64 @@
+Type,Crimes,Year
+Assault,5531,2016
+Assault,5024,2017
+Assault,4660,2018
+Assault,4712,2019
+Assault,4118,2020
+Assault,4063,2021
+Assault,3807,2022
+Homicide,456,2016
+Homicide,379,2017
+Homicide,323,2018
+Homicide,310,2019
+Homicide,253,2020
+Homicide,243,2021
+Homicide,240,2022
+Sexual Assault,1886,2016
+Sexual Assault,1835,2017
+Sexual Assault,1648,2018
+Sexual Assault,1738,2019
+Sexual Assault,1582,2020
+Sexual Assault,1553,2021
+Sexual Assault,1712,2022
+Armed Gang Robbery,65,2016
+Armed Gang Robbery,31,2017
+Armed Gang Robbery,31,2018
+Armed Gang Robbery,21,2019
+Armed Gang Robbery,6,2020
+Armed Gang Robbery,5,2021
+Armed Gang Robbery,16,2022
+Unarmed Gang Robbery,10907,2016
+Unarmed Gang Robbery,9779,2017
+Unarmed Gang Robbery,6543,2018
+Unarmed Gang Robbery,6058,2019
+Unarmed Gang Robbery,2992,2020
+Unarmed Gang Robbery,3071,2021
+Unarmed Gang Robbery,2432,2022
+Armed Solo Robbery,19,2016
+Armed Solo Robbery,3,2017
+Armed Solo Robbery,9,2018
+Armed Solo Robbery,9,2019
+Armed Solo Robbery,5,2020
+Armed Solo Robbery,2,2021
+Armed Solo Robbery,7,2022
+Unarmed Solo Robbery,3463,2016
+Unarmed Solo Robbery,4315,2017
+Unarmed Solo Robbery,3688,2018
+Unarmed Solo Robbery,3641,2019
+Unarmed Solo Robbery,4323,2020
+Unarmed Solo Robbery,2558,2021
+Unarmed Solo Robbery,2134,2022
+Burglary,18760,2016
+Burglary,16201,2017
+Burglary,15742,2018
+Burglary,16497,2019
+Burglary,14040,2020
+Burglary,11352,2021
+Burglary,10585,2022
+Other Types of Theft,22857,2016
+Other Types of Theft,19444,2017
+Other Types of Theft,20065,2018
+Other Types of Theft,19603,2019
+Other Types of Theft,16725,2020
+Other Types of Theft,16695,2021
+Other Types of Theft,15434,2022
