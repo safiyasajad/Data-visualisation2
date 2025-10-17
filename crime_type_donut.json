@@ -3,7 +3,7 @@
   "width": 400,
   "height": 420,
   "data": {
-    "url": "https://raw.githubusercontent.com/safiyasajad/Data-Visualisation-2/main/crime_by_year_type.csv"
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/crime_by_year_type.csv"
   },
   "transform": [
     {

@@ -71,3 +71,19 @@ h2 {
   width: 100% !important;
   height: 100% !important;
 }
+
+/* Description text below visualizations */
+.description {
+  max-width: 850px;
+  text-align: justify;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: #fdfdfd;
+  padding: 12px 18px;
+  border-left: 4px solid #007acc;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
