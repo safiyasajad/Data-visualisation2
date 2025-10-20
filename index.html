@@ -15,59 +15,108 @@
 </head>
 
 <body>
-  <h1>Crime Trends across Malaysia</h1>
+
+  <!-- Header -->
+  <header>
+    <h1> Crime patters in Malaysia across states</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#map_section">Cases Map</a></li>
+      <li><a href="#donut_section">Crime Types</a></li>
+      <li><a href="#scatter_section">Assault vs Property</a></li>
+      <li><a href="#small_multiples_section">Property crimes</a></li>
+      <li><a href="#multi_line_section">Theft of automobile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <br>
+  <p class="intro">
+    Welcome to this visualization of crime data in Malaysia across it states. <br>
+    Explore charts highlighting trends in vehicle thefts, assaults, property crimes, and other offenses across major cities. <br>
+    Analyze the data to uncover patterns, understand risks, and support efforts to improve community safety. <br>
+  </p>
+  <br>
 
   <!-- 🗺️ Map Section -->
-  <section>
-    <h2> </h2>
-    <div id="map_idiom"></div>
-
-    <p class="description">
-      This map visualizes the total number of crime cases reported in each Malaysian state. 
-      The size of each orange circle represents the volume of cases, allowing quick comparisons across regions.
-    </p>
+  <section id="map_section">
+    <h2>Cases Map</h2>
+    <div class="flex-container">
+      <div id="map_idiom" class="visualization"></div>
+      <div class="card">
+        <p>
+          This map visualizes the total number of crime cases reported in each Malaysian state. 
+          The size of each circle represents the volume of cases, allowing quick comparisons across regions.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- 🍩 Donut Chart -->
-  <section>
+  <section id="donut_section">
     <h2>Types of Crime by Year</h2>
-    <div id="crime_donut_chart"></div>
-    <p class="description">
-      This interactive donut chart shows the distribution of crime types for a selected year. 
-      Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
-    </p>
+    <div class="flex-container">
+      <div id="crime_donut_chart" class="visualization"></div>
+      <div class="card">
+        <p>
+          This interactive donut chart shows the distribution of crime types for a selected year. 
+          Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- scatter plot -->
-  <section>
-    <h2>Crimes of assult to people vs property</h2>
-    <div id="scatter_plot"></div>
-    <p class="description">
-      This interactive donut chart shows the distribution of crime types for a selected year. 
-      Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
-    </p>
+  <!-- Scatter Plot -->
+  <section id="scatter_section">
+    <h2>Assault vs Property Crimes</h2>
+    <div class="flex-container">
+      <div id="scatter_plot" class="visualization"></div>
+      <div class="card">
+        <p>
+          Explore how assault and property crimes relate to each other across Malaysian states over time.
+        </p>
+      </div>
+    </div>
   </section>
 
-    <!-- scatter plot -->
-  <section>
-    <h2> </h2>
-    <div id="small_multiples"></div>
-    <p class="description">
-      This interactive donut chart shows the distribution of crime types for a selected year. 
-      Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
-    </p>
+  <!-- Small Multiples -->
+  <section id="small_multiples_section">
+    <h2>Property crimes (2000 - 2019)</h2>
+    <div class="flex-container">
+      <div id="small_multiples" class="visualization"></div>
+      <div class="card">
+        <p>
+          Compare crime trends across multiple categories simultaneously using small multiples visualizations.
+        </p>
+      </div>
+    </div>
   </section>
 
-  
-  <!-- multi line -->
-  <section>
-    <h2> </h2>
-    <div id="multi_line"></div>
-    <p class="description">
-      This interactive donut chart shows the distribution of crime types for a selected year. 
-      Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
-    </p>
+  <!-- Multi-Line Chart -->
+  <section id="multi_line_section">
+    <h2>Theft of automobile (2000 - 2019) </h2>
+    <div class="flex-container">
+      <div id="multi_line" class="visualization"></div>
+      <div class="card">
+        <p>
+          Track the evolution of different crime types in Malaysia from 2016 to 2022.
+        </p>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      &copy; Safiya Sajad. October 2025 All rights reserved.<br>
+      Data sourced from:
+      <a href="https://data.gov.my/data-catalogue/crime_district" target="_blank">Crime by district</a>,
+      <a href="https://archive.data.gov.my/data/ms_MY/dataset/property-crimes-reported-to-police-by-type-of-crime-malaysia/resource/baa955e9-5911-4821-80de-c4fbd48acd4d?view_id=ea72fa17-c457-422a-b6b4-acaaa5d2bfb9" target="_blank">Property crime</a> 
+    </p>
+  </footer>
 
   <!-- JS -->
   <script src="vega_lite_vis.js"></script>

@@ -1,16 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Property Crime (2000-2019)",
-    "anchor": "middle",
-    "fontSize": 18,
-    "font": "sans",
-    "fontWeight": "bold"
-  },
   "data": {
     "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/property%20crime.csv"
   },
-  "width": 700,
+  "width": 780,
   "height": 120,
   "mark": {
     "type": "line",

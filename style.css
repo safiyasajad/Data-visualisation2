@@ -1,98 +1,176 @@
-/* style.css */
-
 /* General layout */
 body {
-  background-color: white;
-  color: #222;
+  background-color: #fdf0d5;
   margin: 0;
   padding: 0;
-  flex-direction: column;
-  align-items: center ;
-  display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
-
-/* Headings */
-h1 { /*main title*/
-  color: black;
-  font-size: 60px; 
-  font-family: sans-serif;
-  
-  /*text-shadow: 0px 0px 5px yellow*/;
-}
-
-h2 { /* title of every graph*/
-  
-  color: black;
-  font-size: 25px; 
-  font-family: sans-serif;
-  text-shadow: 0px 0px 5px yellow;
+/* Header */
+header {
+  background-color: #008080; /* teal */
   text-align: center;
+  padding: 30px 0;
+}
+
+h1 {
+  color: wheat;
+  font-size: 60px;
+  margin: 0;
+  font-family: sans-serif;
+  /* text-shadow: 0px 0px 5px yellow; */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #20b2aa; /* lightseagreen */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #fdf0d5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #008080;
+}
+
+/* Section Titles */
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #20b2aa;
+  color: #fdf0d5;
+  padding: 10px 0;
+  margin: 40px 0 20px 0;
+  border-radius: 6px;
+}
+
+/* Flex container for chart + card */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 20px;
 }
 
 /* Visualization containers */
-#map_idiom,
-#scatter_plot,
-#crime_donut_chart,
-#small_multiples,
-#multi_line {
-  width: 90%;
-  max-width: 2000px;
-  max-height: 520px;
-  background: #fff;
-  border: 0.5px;
-  border-radius: 0px;
-  padding: 0 px;
-  margin-bottom: 40px;
-}
-
-
-/* Hover effect for interactivity */
-#map_idiom:hover,
-#crime_donut_chart:hover,
-#scatter_plot:hover,
-#small_multiples:hover,
-#multi_line:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease;
-}
-
-#map_idiom,
-#crime_donut_chart,
-#scatter_plot,
-#small_multiples,
-#multi_line {
-  width: 90%;
-  max-width: 100px; /* determines the size of the container holding the graph*/
-  border: 0.5px solid #ccc;
+.visualization {
+  flex: 0 1 60%;
+  min-width: 300px;
+  background: white;
   border-radius: 6px;
-  padding: 0;
-  margin-bottom: 40px;
-  max-height: 100px; /* Let chart dictate size */
-}
-/* Fit Vega charts properly */
-#map_idiom > div,
-#crime_donut_chart > div,
-#scatter_plot >div,
-#small_multiples> div,
-#multi_line>div  {
-  width: 100% !important;
-  height: 100% !important;
+  padding: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
 }
 
-/* Description text below visualizations */
-.description {
-  max-width: 850px;
-  text-align: justify;
-  color: #555;
-  font-size: 0.95rem;
+/* Description cards */
+.card {
+  flex: 0 1 35%;
+  min-width: 250px;
+  background-color: #008080;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Animated glow effect */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), white,white, white);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+/* Paragraph styling */
+p {
+  font-size: 18px;
   line-height: 1.6;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  background-color: #fdfdfd;
-  padding: 0px ;
-  font-family: sans;
-  /*border-left: 4px solid #007acc;*/ /*gives the textbox a border*/
-  border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+}
+
+/* Center the intro paragraph */
+.intro {
+  max-width: 800px;       /* keeps the paragraph from being too wide */
+  margin: 20px auto;      /* centers horizontally with top/bottom spacing */
+  text-align: center;     /* centers the text inside */
+  font-size: 20px;
+  line-height: 1.5;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer */
+.footer {
+  background-color: #20b2aa;
+  color: #fdf0d5;
+  text-align: center;
+  padding: 12px 0;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+}
+
+.footer a {
+  color: #fdf0d5;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.footer a:hover {
+  color: #008080;
+  text-align: center;
 }
