@@ -1,4 +1,4 @@
-type,crime,Year
+type,crimes,Year
 House break-ins ,32913,2000
 House break-ins ,28452,2001
 House break-ins ,25265,2002
@@ -99,3 +99,4 @@ Snatch,2963,2016
 Snatch,227,2017
 Snatch,138,2018
 Snatch,19,2019
+
