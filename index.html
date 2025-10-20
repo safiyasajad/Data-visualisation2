@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Crime Trends across Malaysia</title>
 
   <!-- Vega libraries -->
@@ -19,8 +19,9 @@
 
   <!-- 🗺️ Map Section -->
   <section>
-    <h2>Crime Distribution by State</h2>
+    <h2> </h2>
     <div id="map_idiom"></div>
+
     <p class="description">
       This map visualizes the total number of crime cases reported in each Malaysian state. 
       The size of each orange circle represents the volume of cases, allowing quick comparisons across regions.
@@ -41,6 +42,16 @@
   <section>
     <h2>Types of Crime by Year</h2>
     <div id="crime_donut_chart"></div>
+    <p class="description">
+      This interactive donut chart shows the distribution of crime types for a selected year. 
+      Use the dropdown menu to explore changes in crime composition between 2016 and 2022.
+    </p>
+  </section>
+
+  <!-- scatter plot -->
+  <section>
+    <h2>Crimes of assult to people vs property</h2>
+    <div id="scatter_plot"></div>
     <p class="description">
       This interactive donut chart shows the distribution of crime types for a selected year. 
       Use the dropdown menu to explore changes in crime composition between 2016 and 2022.

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 500,
+  "width": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/Assault%20VS%20Property.csv",
+    "format": {"type": "csv"}
+  },
+  "padding": {"top": 20, "bottom": 30, "left": 10, "right": 10},
+  "layer": [
+    {
+      "mark": {"type": "point", "size": 800, "filled": true},
+      "encoding": {
+        "x": {
+          "field": "Assault",
+          "type": "quantitative",
+          "title": "Assault Cases (thousands)",
+          "axis": {
+            "tickCount": 10,
+            "format": "~s",
+            "labelFontSize": 18,
+            "titleFontSize": 18,
+            "labelPadding": 12
+          },
+          "scale": {"type": "linear"}
+        },
+        "y": {
+          "field": "Property",
+          "type": "quantitative",
+          "title": "Property Cases (thousands)",
+          "axis": {
+            "tickCount": 10,
+            "format": "~s",
+            "labelFontSize": 18,
+            "titleFontSize": 18,
+            "labelPadding": 12
+          },
+          "scale": {"type": "linear"}
+        },
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "legend": {
+            "title": "States in Malaysia",
+            "labelFontSize": 16,
+            "titleFontSize": 18
+          }
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Assault", "type": "quantitative", "format": "~s"},
+          {"field": "Property", "type": "quantitative", "format": "~s"},
+          {"field": "Region", "type": "nominal"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "black",
+        "font": "sans",
+        "fontSize": 15
+      },
+      "encoding": {
+        "x": {"value": 50},
+        "y": {"value": 20},
+        "text": {"value": "Selangor has the highest property and assault cases"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "color": "black",
+        "font": "Times New Roman",
+        "fontSize": 15
+      },
+      "encoding": {
+        "x": {"value": 90},
+        "y": {"value": 40},
+        "text": {"value": "compared to other Malaysian states"}
+      }
+    }
+  ]
+}

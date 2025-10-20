@@ -20,3 +20,8 @@ vegaEmbed('#crime_donut_chart', vg_3).then(function(result) {
   console.log("Donut chart loaded successfully!");
 }).catch(console.error);
 
+var vg_4 = "scatter_plot.vg.json";
+vegaEmbed('#scatter_plot', vg_4).then(function(result) {
+  console.log("scatter plot loaded successfully!");
+}).catch(console.error);
+
