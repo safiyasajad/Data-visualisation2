@@ -1,0 +1,3 @@
+https://data.gov.my/data-catalogue/crime_district: used for the assault vs property
+https://www.researchgate.net/publication/360020741_PROPERTY_CRIME_INCIDENCE_AND_PATTERNS_IN_MALAYSIA_FROM_2007_TO_2017: 
+https://archive.data.gov.my/data/ms_MY/dataset/property-crimes-reported-to-police-by-type-of-crime-malaysia/resource/baa955e9-5911-4821-80de-c4fbd48acd4d?view_id=ea72fa17-c457-422a-b6b4-acaaa5d2bfb9: for small multiples

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Property Crime (2000-2019)",
+    "anchor": "middle",
+    "fontSize": 18,
+    "font": "sans",
+    "fontWeight": "bold"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/property%20crime.csv"  },
+  "width": 700,
+  "height": 120,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "grid": false,
+        "labelFontSize": 14,
+        "titleFontSize": 16,
+        "labelFont": "sans",
+        "titleFont": "sans"}
+    },
+    "y": {
+      "field": "crime",
+      "type": "quantitative",
+    "title": "Number of Crimes",
+      "axis": {
+        "grid": false,
+        "labelFontSize": 14,
+        "titleFontSize": 16,
+        "labelFont": "sans",
+        "titleFont": "sans"}
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": ["House break-ins", "Vehicles theft", "Snatch"],
+        "range": ["#3b82f6", "#22c55e", "#f97316"]
+      }
+    },
+    "row": {
+      "field": "type",
+      "type": "nominal",
+      "title": "Type of Property Crime",
+      "header": {
+        "titleFontSize": 20,
+        "titleFontWeight": "bold",
+        "titleFont": "sans",
+        "labelFontSize": 17,
+        "labelFont": "sans",
+        "labelPadding": 10}
+    },
+    "tooltip": [
+      { "field": "Year", "type": "ordinal", "title": "Year" },
+      { "field": "crime", "type": "quantitative", "title": "Number of Crimes" },
+      { "field": "type", "type": "nominal", "title": "Crime Type" }
+    ]
+  }
+}

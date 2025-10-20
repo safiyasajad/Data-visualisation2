@@ -32,8 +32,9 @@ h2 { /* title of every graph*/
 
 /* Visualization containers */
 #map_idiom,
-#stacked_bar_chart,
-#crime_donut_chart {
+#scatter_plot,
+#crime_donut_chart,
+#small_multiples {
   width: 90%;
   max-width: 2000px;
   max-height: 520px;
@@ -47,15 +48,17 @@ h2 { /* title of every graph*/
 
 /* Hover effect for interactivity */
 #map_idiom:hover,
-#stacked_bar_chart:hover,
-#crime_donut_chart:hover {
+#crime_donut_chart:hover,
+#scatter_plot:hover,
+#small_multiples:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease;
 }
 
 #map_idiom,
-#stacked_bar_chart,
-#crime_donut_chart {
+#crime_donut_chart,
+#scatter_plot,
+#small_multiples {
   width: 90%;
   max-width: 100px; /* determines the size of the container holding the graph*/
   background: orange;
@@ -67,9 +70,9 @@ h2 { /* title of every graph*/
 }
 /* Fit Vega charts properly */
 #map_idiom > div,
-#stacked_bar_chart > div,
 #crime_donut_chart > div,
-#scatter_plot >div  {
+#scatter_plot >div,
+#small_multiples> div  {
   width: 100% !important;
   height: 100% !important;
 }
