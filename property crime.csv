@@ -1,0 +1,61 @@
+type,crime,Year
+House break-ins,32913,2000
+House break-ins,28452,2001
+House break-ins,25265,2002
+House break-ins,25789,2003
+House break-ins,24904,2004
+House break-ins,24465,2005
+House break-ins,28872,2006
+House break-ins,33590,2007
+House break-ins,35588,2008
+House break-ins,37641,2009
+House break-ins,32603,2010
+House break-ins,28020,2011
+House break-ins,24939,2012
+House break-ins,23317,2013
+House break-ins,20679,2014
+House break-ins,19286,2015
+House break-ins,18760,2016
+House break-ins,16226,2017
+House break-ins,15742,2018
+House break-ins,16497,2019
+Vehicles theft,56879,2000
+Vehicles theft,60049,2001
+Vehicles theft,60251,2002
+Vehicles theft,64300,2003
+Vehicles theft,65076,2004
+Vehicles theft,66927,2005
+Vehicles theft,82954,2006
+Vehicles theft,85081,2007
+Vehicles theft,145188,2008
+Vehicles theft,80438,2009
+Vehicles theft,72182,2010
+Vehicles theft,68759,2011
+Vehicles theft,71981,2012
+Vehicles theft,70847,2013
+Vehicles theft,60693,2014
+Vehicles theft,54009,2015
+Vehicles theft,48411,2016
+Vehicles theft,42152,2017
+Vehicles theft,35953,2018
+Vehicles theft,30867,2019
+Snatch,0,2000
+Snatch,14368,2001
+Snatch,0,2002
+Snatch,15798,2003
+Snatch,11536,2004
+Snatch,9617,2005
+Snatch,11074,2006
+Snatch,11106,2007
+Snatch,8205,2008
+Snatch,9665,2009
+Snatch,5849,2010
+Snatch,3323,2011
+Snatch,2500,2012
+Snatch,2118,2013
+Snatch,2382,2014
+Snatch,2362,2015
+Snatch,2963,2016
+Snatch,227,2017
+Snatch,138,2018
+Snatch,19,2019
