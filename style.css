@@ -34,7 +34,8 @@ h2 { /* title of every graph*/
 #map_idiom,
 #scatter_plot,
 #crime_donut_chart,
-#small_multiples {
+#small_multiples,
+#multi_line {
   width: 90%;
   max-width: 2000px;
   max-height: 520px;
@@ -50,7 +51,8 @@ h2 { /* title of every graph*/
 #map_idiom:hover,
 #crime_donut_chart:hover,
 #scatter_plot:hover,
-#small_multiples:hover {
+#small_multiples:hover,
+#multi_line:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease;
 }
@@ -58,10 +60,10 @@ h2 { /* title of every graph*/
 #map_idiom,
 #crime_donut_chart,
 #scatter_plot,
-#small_multiples {
+#small_multiples,
+#multi_line {
   width: 90%;
   max-width: 100px; /* determines the size of the container holding the graph*/
-  background: orange;
   border: 0.5px solid #ccc;
   border-radius: 6px;
   padding: 0;
@@ -72,7 +74,8 @@ h2 { /* title of every graph*/
 #map_idiom > div,
 #crime_donut_chart > div,
 #scatter_plot >div,
-#small_multiples> div  {
+#small_multiples> div,
+#multi_line>div  {
   width: 100% !important;
   height: 100% !important;
 }

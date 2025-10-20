@@ -22,3 +22,7 @@ vegaEmbed('#scatter_plot', vg_4).then(function(result) {
 }).catch(console.error);
 
 
+var vg_5 = "multi_line_graph.vg.json";
+vegaEmbed('#multi_line', vg_5).then(function(result) {
+  console.log("multi line graph loaded successfully!");
+}).catch(console.error);

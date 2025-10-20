@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Automobile theft cases over years by vehicle type with points for each year.",
+  "title": "Theft of automobile (2000-2019)",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/automobile_theft.csv"
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {"domain": [2000, 2019]}, 
+      "axis": {"format": "d"} 
+    },
+    "y": {
+      "field": "cases",
+      "type": "quantitative",
+      "title": "Number of Theft Cases"
+    },
+    "color": {
+      "field": "Auto mobile",
+      "type": "nominal",
+      "title": "Vehicle Type"
+    },
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "Auto mobile"},
+      {"field": "cases"}
+    ]
+  }
+}
+  
