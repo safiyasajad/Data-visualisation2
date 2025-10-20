@@ -8,10 +8,14 @@
     "fontWeight": "bold"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/property%20crime.csv"  },
+    "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/property%20crime.csv"
+  },
   "width": 700,
   "height": 120,
-  "mark": "line",
+  "mark": {
+    "type": "line",
+    "point": true
+  },
   "encoding": {
     "x": {
       "field": "Year",
@@ -22,18 +26,20 @@
         "labelFontSize": 14,
         "titleFontSize": 16,
         "labelFont": "sans",
-        "titleFont": "sans"}
+        "titleFont": "sans"
+      }
     },
     "y": {
       "field": "crime",
       "type": "quantitative",
-    "title": "Number of Crimes",
+      "title": "Number of Crimes",
       "axis": {
         "grid": false,
         "labelFontSize": 14,
         "titleFontSize": 16,
         "labelFont": "sans",
-        "titleFont": "sans"}
+        "titleFont": "sans"
+      }
     },
     "color": {
       "field": "type",
@@ -54,12 +60,13 @@
         "titleFont": "sans",
         "labelFontSize": 17,
         "labelFont": "sans",
-        "labelPadding": 10}
+        "labelPadding": 10
+      }
     },
     "tooltip": [
-      { "field": "Year", "type": "ordinal", "title": "Year" },
-      { "field": "crime", "type": "quantitative", "title": "Number of Crimes" },
-      { "field": "type", "type": "nominal", "title": "Crime Type" }
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {"field": "crime", "type": "quantitative", "title": "Number of Crimes"},
+      {"field": "type", "type": "nominal", "title": "Crime Type"}
     ]
   }
 }
