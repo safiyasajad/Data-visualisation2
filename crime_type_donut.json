@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 550,
+  "width": 600,
   "height": 420,
   "data": {
     "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/crime_by_year_type.csv"
@@ -45,11 +45,10 @@
     "color": {
       "field": "Type",
       "type": "nominal",
-      
       "legend": {
         "title": "Types of Crimes",
-        "labelFontSize": 10,  
-        "titleFontSize": 25    
+        "labelFontSize": 14,  
+        "titleFontSize": 17    
       }
     },
     "tooltip": [  

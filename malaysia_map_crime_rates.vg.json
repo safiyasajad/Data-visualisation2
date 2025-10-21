@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 850,
+  "width": 780,
   "height": 440,
   "padding": 0,
   "background": "lightsteelblue",        
-  "title": "Crime Trends across states in Malaysia",
   "projection": {"type": "mercator", "scale": 2200, "center": [110, 4]},
   "layer": [
     {

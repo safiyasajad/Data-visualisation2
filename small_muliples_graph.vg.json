@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/property%20crime.csv"
   },
-  "width": 780,
+  "width": 700,
   "height": 120,
   "mark": {
     "type": "line",

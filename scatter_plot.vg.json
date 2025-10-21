@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 500,
-  "width": 680,
+  "width": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/safiyasajad/Data-visualisation2/refs/heads/main/Assault%20VS%20Property.csv",
     "format": {"type": "csv"}
@@ -49,9 +49,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal"},
           {"field": "Assault", "type": "quantitative", "format": "~s"},
-          {"field": "Property", "type": "quantitative", "format": "~s"},
-          {"field": "Region", "type": "nominal"}
-        ]
+          {"field": "Property", "type": "quantitative", "format": "~s"}        ]
       }
     },
     {
@@ -59,7 +57,7 @@
         "type": "text",
         "align": "left",
         "color": "black",
-        "font": "sans",
+        "font": "serif",
         "fontSize": 15
       },
       "encoding": {
@@ -73,8 +71,8 @@
         "type": "text",
         "align": "left",
         "color": "black",
-        "font": "Times New Roman",
-        "fontSize": 18
+        "font": "serif",
+        "fontSize": 15
       },
       "encoding": {
         "x": {"value": 90},
