@@ -61,7 +61,7 @@
         "fontSize": 15
       },
       "encoding": {
-        "x": {"value": 50},
+        "x": {"value": 200},
         "y": {"value": 20},
         "text": {"value": "Selangor has the highest property and assault cases"}
       }
@@ -75,7 +75,7 @@
         "fontSize": 15
       },
       "encoding": {
-        "x": {"value": 90},
+        "x": {"value": 240},
         "y": {"value": 40},
         "text": {"value": "compared to other Malaysian states"}
       }
