@@ -40,7 +40,7 @@
       "legend": null,
       "scale": {
         "domain": ["House break-ins", "Vehicles theft", "Snatch"],
-        "range": ["#3b82f6", "#22c55e", "#f97316"]
+        "range": ["#3b82f6", "#22c55e", "#be29ec"]
       }
     },
     "row": {
